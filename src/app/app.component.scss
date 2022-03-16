@@ -1,0 +1,41 @@
+#wrapper {
+    max-width: 1200px;
+}
+
+#header {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    line-height: 120px;
+    img {
+        height: 96px;
+    }
+
+    #menu ul {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 500;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding-left: 20px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#hero {
+    align-items: center;
+    .teaser {
+        font-family: 'Poppins';
+        font-size: 3.5em;
+        line-height: 1.2;
+    }
+    .description {
+        font-family: 'Raleway';
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+}
