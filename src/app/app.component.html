@@ -1,23 +1,34 @@
-<div id="wrapper" class="container">
-  <div id="header" class="row">
-    <div id="logo" class="col">
-      <img src="assets/ban-nanny.png" alt="">
-    </div>
-    <div id="menu" class="col">
-      <ul>
-        <li><a href="#item1">Item 1</a></li>
-        <li><a href="#item2">Item 2</a></li>
-        <li><a href="#item3">Item 3</a></li>
-      </ul>
+<div class="wrapper">
+  <div class="container">
+    <div id="header" class="row">
+      <div id="logo" class="col">
+        <a routerLink="/"><img src="assets/ban-nanny.png" alt=""></a>
+      </div>
+      <div id="menu" class="col">
+        <ul>
+          <li><a href="#item1">Item 1</a></li>
+          <li><a href="#item2">Item 2</a></li>
+          <li><a href="#item3">Item 3</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div id="hero" class="row">
-    <div id="hero-text" class="col">
-      <p class="teaser">L'application des mamans de jour modernes !</p>
-      <p class="description">Nanny+ facilite la saisie des données, le suivi des heures travaillées, la facturation, et la comptabilité des mamans de jour.</p>
-    </div>
-    <div id="hero-img" class="col">
-      <img src="assets/usfjo3d2kybycjub.png">
+  <router-outlet></router-outlet>
+  <div class="grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-8">
+          &copy;2022 Yannick Mauray
+        </div>
+        <div class="col-12 col-sm-2">
+          Legal<br/>
+          <a routerLink="confidentialite">Privacy policy</a>
+        </div>
+        <div class="col-12 col-sm-2">
+          Created by<br/>
+          Yannick Mauray
+        </div>
+      </div>
     </div>
   </div>
 </div>
