@@ -85,7 +85,7 @@ body {
 }
 
 .grey {
-  background-color: lightgray;
+  background-color: rgba($color: #000000, $alpha: 0.04);
 }
 
 section title {
@@ -96,4 +96,22 @@ section title {
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.feature {
+  align-items: center;
+  .screenshot {
+    text-align: center;
+  }
+  text-align: right;
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+    .text {
+      text-align: left;
+    }
+  }
+  img {
+    height: 670px;
+    width: auto;
+  }
 }
