@@ -10,7 +10,6 @@ body {
 }
 
 #header {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
   line-height: 120px;
   img {
     height: 96px;
@@ -40,7 +39,8 @@ body {
 #hero-text {
   .teaser {
     font-family: "Poppins";
-    font-size: 3.5em;
+    font-weight: 700;
+    font-size: 2.8em;
     line-height: 1.2;
   }
   .description {
@@ -84,6 +84,23 @@ body {
   }
 }
 
+.store-badges {
+  display: flex;
+
+  a {
+    margin: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .gps-button img {
+    height: 40px;
+    width: auto;
+  }
+}
+
 .grey {
   background-color: rgba($color: #000000, $alpha: 0.04);
 }
@@ -91,6 +108,7 @@ body {
 section title {
   display: inline-block;
   font-family: "Poppins";
+  font-weight: 700;
   font-size: 2.5em;
   line-height: 1.2;
   width: 100%;
@@ -100,6 +118,13 @@ section title {
 
 .feature {
   align-items: center;
+  font-size: 1.5rem;
+  .text {
+    h2 {
+      font-family: "Poppins";
+      font-weight: 700;
+    }
+  }
   .screenshot {
     text-align: center;
   }
@@ -113,5 +138,34 @@ section title {
   img {
     height: 670px;
     width: auto;
+  }
+}
+
+.question-wrapper {
+  font-weight: 400;
+  border-bottom: 3px solid black;
+  padding: 10px 0;
+  cursor: pointer;
+
+  &.first {
+    border-top: 3px solid black;
+  }
+
+  .question {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .answer {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.footnote {
+  padding: 2rem 0;
+
+  &.privacy-policy {
+    text-align: right;
   }
 }
